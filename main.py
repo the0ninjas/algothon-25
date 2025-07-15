@@ -153,7 +153,7 @@ def getMyPosition(prcSoFar):
         return np.zeros(nins)
 
     # Choose one strategy here:
-    # targetPos = strategy_cross_sectional_momentum(prcSoFar)
+    targetPos = strategy_cross_sectional_momentum(prcSoFar)
     # targetPos = strategy_time_series_momentum(prcSoFar)
     # targetPos = strategy_mean_reversion(prcSoFar)
     # targetPos = strategy_risk_parity(prcSoFar)
@@ -162,7 +162,7 @@ def getMyPosition(prcSoFar):
     # targetPos = strategy_stat_arbitrage(prcSoFar)
     # targetPos = strategy_cluster_mean_reversion(prcSoFar)
     # targetPos = strategy_volatility_breakout(prcSoFar)
-    targetPos = strategy_mean_reverting_portfolio(prcSoFar)
+    # targetPos = strategy_mean_reverting_portfolio(prcSoFar)
 
 
     trade = targetPos - currentPos
